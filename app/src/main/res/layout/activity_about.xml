@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Aplikasi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Card Storyline -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#C8FF01">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storyline"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="22dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:text="Aplikasi ini dibuat untuk membantu pengguna dalam memprediksi kondisi lalu lintas berdasarkan hari dan jumlah kendaraan. Dengan memanfaatkan model kecerdasan buatan (AI) menggunakan TensorFlow Lite, aplikasi ini mampu memberikan prediksi apakah lalu lintas akan macet, padat, normal, atau lancar. Prediksi ini diharapkan dapat membantu pengambilan keputusan dalam perencanaan perjalanan secara lebih cerdas dan efisien." />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tombol/link Dataset -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#C8FF01">
+
+
+            <!-- cara Kerja -->
+            <TextView
+                android:text="Link Dataset : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:autoLink="web"
+                android:text="https://www.kaggle.com/datasets/hasibullahaman/traffic-prediction-dataset"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#C8FF01">
+
+
+            <!-- cara Kerja  -->
+            <TextView
+                android:text=" Cara Kerja Aplikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Pengguna memasukkan data berupa hari dan jumlah kendaraan (mobil, motor, bus, truk) ke dalam aplikasi. Data ini kemudian diproses oleh model machine learning yang telah dilatih menggunakan TensorFlow Lite. Model akan menganalisis pola lalu lintas dan memberikan prediksi kondisi jalan, seperti macet, padat, normal, atau lancar. Hasil prediksi ditampilkan bersama tingkat kepercayaannya (confidence) secara real-time untuk membantu pengguna dalam mengambil keputusan perjalanan."/>
+
+            <TextView
+
+                android:text="Made by Khafidh Ilham Cahya Gumelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="440dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="22dp"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

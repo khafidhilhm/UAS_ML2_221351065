@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Myapp</string>
+    <string-array name="day_names">
+        <item>Minggu</item>
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+    </string-array>
+
+</resources>

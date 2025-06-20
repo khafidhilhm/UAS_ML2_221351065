@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/layout_architecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arsitektur Model"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Card Storyline -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#C8FF01">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arsitektur Model"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Judul Model Machine Learning -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model Machine Learning"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Subjudul Pre-Processing -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pre-Processing"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Subjudul 1) Data Transform -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1). Data Transform"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="210dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Gambar kode pertama -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/code_transform1"
+                android:contentDescription="Kode transformasi label"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="250dp"
+                android:paddingBottom="8dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:text="Aplikasi ini menggunakan model Artificial Neural Network (ANN) yang tersusun atas beberapa lapisan untuk menangani proses klasifikasi." />
+
+            <!-- Deskripsi transformasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="300dp"
+                android:justificationMode="inter_word"
+                android:text="Kode ini mengubah label menjadi angka dengan LabelEncoder, lalu menyimpan encoder tersebut ke file label_encoder.pkl agar bisa dipakai lagi saat model dijalankan (deployment)." />
+
+            <!-- Subjudul 2) label dan Fitur-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2). label dan Fitur"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="480dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Gambar kode kedua -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/code_transform2"
+                android:contentDescription="Kode transformasi label"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="520dp"
+                android:paddingBottom="8dp" />
+
+            <!-- Deskripsi transformasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="550dp"
+                android:justificationMode="inter_word"
+                android:text="Kode ini digunakan untuk memisahkan data fitur dan target dari dataset (df):
+
+X = df[features]: Menyimpan data input (fitur) yang akan digunakan untuk pelatihan model.
+
+y = df['Traffic Situation']: Menyimpan data target/output yang akan diprediksi oleh model.
+
+ Fungsinya untuk Menyiapkan data agar bisa digunakan untuk melatih model machine learning." />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card Storyline -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#C8FF01">
+
+
+            <!-- Judul Model Machine Learning 2-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelling"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="22dp"/>
+
+
+            <!-- Subjudul 1) Data Transform -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1). Train Data dan Standarisasi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="210dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Gambar kode ketiga -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/code_transform3"
+                android:contentDescription="Kode transformasi label"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="250dp"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/code_transform4"
+                android:contentDescription="Kode transformasi label"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="290dp"
+                android:paddingBottom="8dp" />
+
+            <!-- Deskripsi transformasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="390dp"
+                android:justificationMode="inter_word"
+                android:text="Kode ini berfungsi untuk menyiapkan data sebelum dilatih ke model. Data dibagi menjadi data latih dan data uji, lalu dinormalisasi agar setiap fitur memiliki skala yang seimbang. Proses normalisasi ini penting agar model dapat belajar dengan lebih baik. Objek normalisasi (scaler) juga disimpan agar bisa digunakan kembali saat melakukan prediksi pada data baru." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:text="Aplikasi ini menggunakan model Artificial Neural Network (ANN) yang tersusun atas beberapa lapisan untuk menangani proses klasifikasi." />
+
+
+
+            <!-- Subjudul 2) label dan Fitur-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2).  Modeling ANN"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="720dp"
+                android:layout_marginLeft="22dp"/>
+
+            <!-- Gambar kode kedua -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/code_transform5"
+                android:contentDescription="Kode transformasi label"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="770dp"
+                android:paddingBottom="8dp" />
+
+            <!-- Deskripsi transformasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="920dp"
+                android:justificationMode="inter_word"
+                android:text="Model ANN ini digunakan untuk memprediksi kondisi lalu lintas berdasarkan data seperti jumlah kendaraan dan waktu. Arsitektur terdiri dari dua hidden layer dengan aktivasi ReLU dan dropout untuk mencegah overfitting, serta output layer dengan softmax untuk klasifikasi multikelas. Model dikompilasi menggunakan optimizer Adam, loss sparse categorical crossentropy, dan metrik akurasi." />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
